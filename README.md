@@ -37,7 +37,7 @@ pip install graphspace_python
 
 - If you get a permissions error and you're on a Mac, use `sudo`, which provides admin access so the package can be installed in the Python directory:
 ```
-pip install graphspace_python
+sudo pip install graphspace_python
 ```
 
 - If you get an error that `pip` is not found and you are using Anaconda, try using `pip` within a `conda` environment: [here is some documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment).
