@@ -18,9 +18,9 @@ Spend 15 minutes reading to answer these questions. You won't have all the detai
 We will discuss the questions after everyone has had some time looking for answers.
 
 ![dolphin network](figs/Lusseau_Evolutionary_Ecology_2006_fig1.png)
-_Figure 1 from Lusseau paper._
+_Figure 1 from [Lusseau paper](https://arxiv.org/pdf/q-bio/0607048.pdf)._
 
-## :star: **Tasks B-C**: Post a Test Graph to GraphSpace
+## :star: **Tasks B & C**: Post a Test Graph to GraphSpace
 
 GraphSpace is a webserver that allows researchers to interact with networks. It is located at [http://graphspace.org/](http://graphspace.org/).  
 
@@ -56,7 +56,7 @@ Within the `post_test_graph()` function, complete the following:
 2. Create a GraphSpace Graph object (we'll call it `G`) that will be posted to GraphSpace.  Set the title and tags of this graph like so:
 ```
 G = GSGraph()
-G.set_name('Test Graph' + str(time.time()))  ## this name is timestamped
+G.set_name('Test Graph ' + str(time.time()))  ## this name is timestamped
 G.set_tags(['Lab 2']) ## tags help you organize your graphs
 ```
 `G` is currently empty; we now need to add nodes and edges to it.
@@ -88,9 +88,9 @@ The Dolphin network described in the Lusseau paper has been parsed into a number
 - `side-floppers.txt` - dolphins who had been observed side-flopping
 - `upside-down-lobtailers.txt` - dolphins who have been observed upside-down lobtailing.
 
-Parse all of this information (the `read_onecol()` and `read_multicols()` functions may be useful here).  Post the graph to GraphSpace of the dolphin social network annotated by **name** and **sex** of each dolphin, as well as whether that dolphin was a **side-flopper or upside-down lobtailer**.  The choice of annotation is up to you (color,size,shape,border,etc.).  Add a description of anntations you selected using the `set_data()` function (HTML formatting allowed):
+Parse all of this information (the `read_onecol()` and `read_multicols()` functions may be useful here).  Post the graph to GraphSpace of the dolphin social network annotated by **name** and **sex** of each dolphin, as well as whether that dolphin was a **side-flopper or upside-down lobtailer**.  The choice of annotation is up to you (color, size, shape, border, etc.).  Add a description of anntations you selected using the `set_data()` function (HTML formatting allowed):
 ```
-G.set_data(data={'description': 'females=squares; males=circles; unkown=stars'})
+G.set_data(data={'description': 'females=squares; males=circles; unknown=stars'})
 ```
 
 Try out different layouts of the graph.  Click the "Change Layout" button to generate the graph using different automatic layouts. Save an automatic or manually generated layout.
@@ -102,7 +102,7 @@ Try out different layouts of the graph.  Click the "Change Layout" button to gen
 :star2: **You're Done with Tasks A-D!**  No code handin is required. Instead, you will share your Dolphin network and any saved layouts with the `BIO331F20` Group.  
 
 - **Share the graph with the group.**  You can use the `share()` function provided in `lab2.py` or share the graph using the website interface (click "share" in the upper right).  
--**If you saved any layouts, make sure they are also shared.**  Click the Layouts tab and select "share" for any layouts you want to share with the group.
+- **If you saved any layouts, make sure they are also shared.**  Click the Layouts tab and select "share" for any layouts you want to share with the group.
 
 Even though you aren't submitting your code here, follow these suggestions:
 - Add comments to your code (this will be useful for posting subsequent graphs).

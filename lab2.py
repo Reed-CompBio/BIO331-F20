@@ -6,13 +6,13 @@ import time
 
 def main():
 
-	## connect to GraphSpace (Task C)
+	## connect to GraphSpace (Task B)
 	#graphspace = GraphSpace('YOUR EMAIL','YOUR PASSWORD')
 
-	## post test graph (Task D)
+	## post test graph (Task C)
 	#post_test_graph(graphspace)
 
-	## post dolphin graph (Tesk E)
+	## post dolphin graph (Task D)
 	#post_dolphin_graph(graphspace)
 
 	return # done with main() function
