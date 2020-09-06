@@ -106,5 +106,5 @@ Try out different layouts of the graph.  Click the "Change Layout" button to gen
 
 Even though you aren't submitting your code here, follow these suggestions:
 - Add comments to your code (this will be useful for posting subsequent graphs).
-- All your code (except import statements and a \texttt{main()} call at the bottom of the file) should be within functions.
+- All your code (except import statements and a `main()` call at the bottom of the file) should be within functions.
 - Clean up your GraphSpace graphs by deleting the unused graphs.  On the page that displays all graphs, there is an option to remove each graph you have posted.
