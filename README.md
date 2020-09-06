@@ -17,7 +17,7 @@ Spend 15 minutes reading to answer these questions. You won't have all the detai
 
 We will discuss the questions after everyone has had some time looking for answers.
 
-![dolphin network](https://d3i71xaburhd42.cloudfront.net/12a8164571e0ba49eeffc37c7adf26c193ebd0dc/4-Figure1-1.png)
+![dolphin network](figs/Lusseau_Evolutionary_Ecology_2006_fig1.png)
 _Figure 1 from Lusseau paper._
 
 ## :star: **Tasks B-C**: Post a Test Graph to GraphSpace
@@ -66,29 +66,29 @@ G.set_tags(['Lab 2']) ## tags help you organize your graphs
 G.add_node(n,label=n)
 ```
 
-4. Add edges to your graph `G` using the `G.add_edge()` function using another `for` loop.  This function takes two strings as input, which are simply the edge's node names:
+4. Add edges to your graph `G` using the `G.add_edge()` function using another `for` loop.  This function takes two strings as input, which are simply the edge's node names. For an edge `[n1,n2]`,
 ```
 G.add_edge(n1,n2)
 ```
 
 5. Now, you are ready to post the graph to GraphSpace. Uncomment the line `graph = post(G,graphspace)` which will post the graph to GraphSpace. (Note that the `post()` function handles the case when the graph is brand-new or already exists; it turns out to be pretty slow when replacing a graph, so the timestamp ensures that each graph you upload is "new.")
 
-6. Finally, add node and edge styles using the options listed on the cheat sheet and user guide.  For each node (resp. edge), first add the element and then call `add_node_style()` (resp. `add_edge_style()`) a single time for each element. For example,
+6. Finally, add node and edge styles using the options listed on the cheat sheet](https://cheatography.com/annaritz/cheat-sheets/graphspace-python-client/) and [user guide](http://manual.graphspace.org/projects/graphspace-python/en/latest/).  For each node (resp. edge), first add the element and then call `add_node_style()` (resp. `add_edge_style()`) a single time for each element. For example,
 ```
 G.add_node(n,label=n)
 G.add_node_style(n,color='red',shape='star',width=80)
 ```
-HTML colors are allowed, e.g., #73C8F3.  You can select node and edge colors using the [HTML Color Picker](https://htmlcolorcodes.com/).
+HTML colors are allowed, e.g., `#73C8F3`.  You can select node and edge colors using the [HTML Color Picker](https://htmlcolorcodes.com/).
 
 ## :star: **Task D**: Post the Dolphin Network to GraphSpace
 
-The Dolphin network described in the Lusseau paper has been parsed into a number of self-explanatory files:
+The Dolphin network described in the Lusseau paper has been parsed into a number of files:
 - `dolphin_edgelist.txt` - edge list of dolphins by names
 - `males.txt` `females.txt` `unknown-sex.txt` - dolphin names by sex
 - `side-floppers.txt` - dolphins who had been observed side-flopping
 - `upside-down-lobtailers.txt` - dolphins who have been observed upside-down lobtailing.
 
-Parse all of this information (the `read_onecol()` and `read_multicols()` functions may be useful here).  Post the graph to GraphSpace of the dolphin social network annotated by name and sex of each dolphin, as well as whether that dolphin was a side-flopper or upside-down lobtailer.  The choice of annotation is up to you (color,size,shape,border,etc.).  Add a description of anntations you selected using the `set_data()` function (HTML formatting allowed):
+Parse all of this information (the `read_onecol()` and `read_multicols()` functions may be useful here).  Post the graph to GraphSpace of the dolphin social network annotated by **name** and **sex** of each dolphin, as well as whether that dolphin was a **side-flopper or upside-down lobtailer**.  The choice of annotation is up to you (color,size,shape,border,etc.).  Add a description of anntations you selected using the `set_data()` function (HTML formatting allowed):
 ```
 G.set_data(data={'description': 'females=squares; males=circles; unkown=stars'})
 ```
@@ -99,11 +99,10 @@ Try out different layouts of the graph.  Click the "Change Layout" button to gen
 
 ## Submitting
 
-No code handin is required. Instead, you will share your Dolphin network and any saved layouts with the `BIO331F20` Group.  
+:star2: **You're Done with Tasks A-D!**  No code handin is required. Instead, you will share your Dolphin network and any saved layouts with the `BIO331F20` Group.  
 
-- When you are happy with your graph, you can delete the older graphs through the GraphSpace website and share the graph with the group.  You can use the `share()` function provided in `lab2.py` or share the graph using the website interface (click "share" in the upper right).  
-- If you saved any layouts, make sure they are also shared.  Click the Layouts tab and select "share" for any layouts you want to share with the group.
-
+- **Share the graph with the group.**  You can use the `share()` function provided in `lab2.py` or share the graph using the website interface (click "share" in the upper right).  
+-**If you saved any layouts, make sure they are also shared.**  Click the Layouts tab and select "share" for any layouts you want to share with the group.
 
 Even though you aren't submitting your code here, follow these suggestions:
 - Add comments to your code (this will be useful for posting subsequent graphs).
