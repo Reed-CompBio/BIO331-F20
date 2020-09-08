@@ -82,7 +82,7 @@ G.add_edge(n1,n2)
 
 5. Now, you are ready to post the graph to GraphSpace. Uncomment the line `graph = post(G,graphspace)` which will post the graph to GraphSpace. (Note that the `post()` function handles the case when the graph is brand-new or already exists; it turns out to be pretty slow when replacing a graph, so the timestamp ensures that each graph you upload is "new.")
 
-6. Finally, add node and edge styles using the options listed on the cheat sheet](https://cheatography.com/annaritz/cheat-sheets/graphspace-python-client/) and [user guide](http://manual.graphspace.org/projects/graphspace-python/en/latest/).  For each node (resp. edge), first add the element and then call `add_node_style()` (resp. `add_edge_style()`) a single time for each element. For example,
+6. Finally, add node and edge styles using the options listed on the [cheat sheet](https://cheatography.com/annaritz/cheat-sheets/graphspace-python-client/) and [user guide](http://manual.graphspace.org/projects/graphspace-python/en/latest/).  For each node (resp. edge), first add the element and then call `add_node_style()` (resp. `add_edge_style()`) a single time for each element. For example,
 ```
 G.add_node(n,label=n)
 G.add_node_style(n,color='red',shape='star',width=80)
