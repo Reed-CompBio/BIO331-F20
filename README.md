@@ -18,7 +18,8 @@ Spend 15 minutes reading to answer these questions. You won't have all the detai
 We will discuss the questions after everyone has had some time looking for answers.
 
 ![dolphin network](figs/Lusseau_Evolutionary_Ecology_2006_fig1.png)
-_Figure 1 from [Lusseau paper](https://arxiv.org/pdf/q-bio/0607048.pdf)._
+_Figure 1 from [Lusseau paper](https://arxiv.org/pdf/q-bio/0607048.pdf)._ Social network of bottlenose dolphins in Doubtful Sound, New Zealand; each vertex represents an individual and each edge represents a pair that was observed in the same school more
+often than expected by chance; see (26) for more details on how the social network was constructed. Dolphins observed side flopping (SF) are in black and the ones observed upside-down lobtailing (ULT) are in grey. 
 
 ## :star: **Tasks B & C**: Post a Test Graph to GraphSpace
 
