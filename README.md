@@ -19,7 +19,7 @@ We will discuss the questions after everyone has had some time looking for answe
 
 ![dolphin network](figs/Lusseau_Evolutionary_Ecology_2006_fig1.png)
 _Figure 1 from [Lusseau paper](https://arxiv.org/pdf/q-bio/0607048.pdf)._ Social network of bottlenose dolphins in Doubtful Sound, New Zealand; each vertex represents an individual and each edge represents a pair that was observed in the same school more
-often than expected by chance; see (26) for more details on how the social network was constructed. Dolphins observed side flopping (SF) are in black and the ones observed upside-down lobtailing (ULT) are in grey. 
+often than expected by chance; see (26) for more details on how the social network was constructed. Dolphins observed side flopping (SF) are in black and the ones observed upside-down lobtailing (ULT) are in grey.
 
 ## :star: **Tasks B & C**: Post a Test Graph to GraphSpace
 
@@ -35,12 +35,14 @@ Once you have an account, click the following link to join the `BIO331F20` group
 
 We will be able to share graphs in the class through this group.  You should be able to [see this graph](http://graphspace.org/graphs/29268?auto_layout=cose) after joining the group - have you seen it before?
 
-Then, install the [`graphspace-python`](http://manual.graphspace.org/projects/graphspace-python/en/latest/index.html) library, which allows you to use Python to upload your own graphs to GraphSpace.  You should be able to install this module by opening a Terminal and typing
+Then, install the [`graphspace-python`](http://manual.graphspace.org/projects/graphspace-python/en/latest/index.html) library, which allows you to use Python to upload your own graphs to GraphSpace.  
+
+- If you are using Anaconda, you can search for and open the Anaconda Command Prompt and type the following. If you are not using Anaconda and you're on a Mac, you can open a Terminal and type the following:
 ```
 pip install graphspace_python
 ```
 
-- If you get a permissions error and you're on a Mac, use `sudo`, which provides admin access so the package can be installed in the Python directory:
+- If you get a permissions error, use `sudo`, which provides admin access so the package can be installed in the Python directory:
 ```
 sudo pip install graphspace_python
 ```
@@ -48,6 +50,8 @@ sudo pip install graphspace_python
 - If you get an error that `pip` is not found and you are using Anaconda, try using `pip` within a `conda` environment: [here is some documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#using-pip-in-an-environment).
 
 - If you get an error that `pip` is not found and you are not using Anaconda, then try installing `pip` according to [these instructions](https://pip.pypa.io/en/stable/installing/).
+
+- If none of these work, ask Anna.
 
 Test that the packages are properly installed by uncommenting Line 10 of `lab2.py`, replacing `'YOUR EMAIL','YOUR PASSWORD'` with your GraphSpace email and password, and running `lab2.py` without an error.  Line 10 establishes a GraphSpace "session", which establishes a connection with the GraphSpace server.
 
