@@ -28,7 +28,11 @@ GraphSpace is a webserver that allows researchers to interact with networks. It 
 
 First, make an account on GraphSpace: [http://graphspace.org/#signup](http://graphspace.org/#signup).  Use your Reed email for your `username`, and use something you are OK with sharing for your `password` (it's easiest to hard-code this in your files).
 
-Once you have an account, click the following link to join the `BIO331F20` group. We will be able to share graphs in the class through this group.  You should be able to [see this graph](http://graphspace.org/graphs/29268?auto_layout=cose) after joining the group - have you seen it before?
+Once you have an account, click the following link to join the `BIO331F20` group:
+
+[http://www.graphspace.org/groups/1298/join/?code=0RZ975RD6P](http://www.graphspace.org/groups/1298/join/?code=0RZ975RD6P)
+
+We will be able to share graphs in the class through this group.  You should be able to [see this graph](http://graphspace.org/graphs/29268?auto_layout=cose) after joining the group - have you seen it before?
 
 Then, install the [`graphspace-python`](http://manual.graphspace.org/projects/graphspace-python/en/latest/index.html) library, which allows you to use Python to upload your own graphs to GraphSpace.  You should be able to install this module by opening a Terminal and typing
 ```
