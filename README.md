@@ -24,7 +24,7 @@ Another way to think about a queue is as a line of people.  When you join the li
 
 ![line](figs/line.png)
 
-While there are Python queue implementations, it is simplest to maintain this as a list. Just be sure you are appending to the list and removing elements from the list in different places (take a look at the `list.pop()` description in the [Python Standard Library Documentation](https://docs.python.org/3.8/tutorial/datastructures.html)).
+While there are Python queue implementations, it is simplest to maintain this as a list. Just be sure you are appending to the list and removing elements from the list in different places.
 
 ## :star: Task A: Run the Shortest Paths Algorithm on an Example graph
 
@@ -81,6 +81,12 @@ node_list, edge_list, adj_list, adj_mat = lab_utils.get_graph('lab') ## or `lect
 Create your own Python `run.py` file and write code to get the `lab` graph (which is a single connected component).  Then, write a `shortest_paths()` function that takes a graph (from the data structures you choose) and a source node (which can be `A` for both graphs) and returns a dictionary of distances of all nodes to `A`.  
 
 :question: How should you represent infinity?  You can either use `float('inf')` or use a very large integer (which needs to be larger than the number of edges in the graph).
+
+:question: How can you remove an element from a particular place in a list? Take a look at the `list.pop()` description in the [Python Standard Library Documentation](https://docs.python.org/3.8/tutorial/datastructures.html). This function does two things (a) it removes an element from the list and (b) it returns that removed element.
+```
+x = list.pop() ## remove the last element and assign it to x
+x = list.pop(i) ## remove the ith element and assign it to x
+```
 
 When you are done, add code to post the graph to GraphSpace. Include the distances from `s` in each node's label to confirm that your code is working properly.  You can use any of your old code from Lab 2 or the previous programming assignment.
 
