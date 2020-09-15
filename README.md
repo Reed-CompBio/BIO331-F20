@@ -101,17 +101,10 @@ _Credit: [cowbirdsinlove](http://cowbirdsinlove.com/)_
 Colors are often specified as amount of `R`ed, `G`reen, and `B`lue (values between 0 and 1).
 
 | (R,G,B) | Color | Color Name |
---
+| -- | -- | -- |
 | (1,1,1) | ![white](figs/white.png) | White |
 | (0,0,0) | ![black](figs/black.png) | Black |
 | (0,0,1) | ![blue](figs/blue.png) | Blue |
 | (0.25,0.25,1) | ![blue](figs/blue1.png) | Lighter Blue |
 | (0.5,0.5,1) | ![blue](figs/blue2.png) | Lighter Blue |
 | (0.75,0.75,1) | ![blue](figs/blue3.png) | Lighter Blue |
-
-```
-\begin{packed_item}
-\item \textbf{White} is (1,1,1); \textbf{Black} is (0,0,0); \textcolor{blue1}{Very Blue} is (0,0,1)
-\item To make a range of blues, we can have \textcolor{blue1}{(0,0,1)} \textcolor{blue2}{(0.25,0.25,1)} \textcolor{blue3}{(0.5,0.5,1)}\textcolor{blue4}{(0.75,0.75,1)}
-\end{packed_item}
-```
