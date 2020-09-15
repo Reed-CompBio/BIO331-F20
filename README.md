@@ -62,7 +62,9 @@ ShortestPaths(G,s):
 
 ## :star: Task B: Implement the Shortest Paths Algorithm
 
-Implement the shortest paths algorithm and post the graph to GraphSpace.  The `lab_utils.py` file contains a function to get two graphs, one from [`lab`](http://graphspace.org/graphs/29432?user_layout=13823), which has a few more nodes than the graph in the Google Slides, and one we saw from [`lecture`](http://graphspace.org/graphs/29433) - click the links to view the un-annotated GraphSpace graphs.
+Implement the shortest paths algorithm and post the graph to GraphSpace.  The `lab_utils.py` file contains a function to get two graphs, one from [`lab`](http://graphspace.org/graphs/29432?user_layout=13823), which has a few more nodes than the graph in the Google Slides, and one we saw from [`lecture`](http://graphspace.org/graphs/29433).  The `lab` network is shown below.
+
+![lab network](figs/lab-network.png)
 
 The function in `lab_utils.py` returns all the graph data structures we have learned about so far.  At the top of your code, add
 
