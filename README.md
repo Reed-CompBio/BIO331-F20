@@ -96,15 +96,43 @@ We'll discuss as a class why this some may find this funny:
 
 _Credit: [cowbirdsinlove](http://cowbirdsinlove.com/)_
 
-### RGB and HTML Colors
-
-Colors are often specified as amount of `R`ed, `G`reen, and `B`lue (values between 0 and 1).
+**RGB**: Colors are often specified as amount of `R`ed, `G`reen, and `B`lue (values between 0 and 1).
 
 | (R,G,B) | Color | Color Name |
 | -- | -- | -- |
-| (1,1,1) | ![white](figs/white.png) | White |
 | (0,0,0) | ![black](figs/black.png) | Black |
 | (0,0,1) | ![blue](figs/blue.png) | Blue |
 | (0.25,0.25,1) | ![blue](figs/blue1.png) | Lighter Blue |
 | (0.5,0.5,1) | ![blue](figs/blue2.png) | Lighter Blue |
 | (0.75,0.75,1) | ![blue](figs/blue3.png) | Lighter Blue |
+| (1,1,1) | ![white](figs/white.png) | White |
+
+**HTML Color Codes**: The HTML color codes have the form `#RRGGBB`: `RR` is a two-digit hexadecimal number for Red; `GG` is a two-digit hexadecimal number for Green; and `BB` is a two-digit hexadecimal number for Blue.  The following snippet of code takes an RGB value and turns it into an HTML color code:
+
+```
+def rgb_to_hex(red,green,blue): # pass in three values between 0 and 1
+  maxHexValue= 255  ## max two-digit hex value (0-indexed)
+  r = int(red*maxHexValue)    ## rescale red
+  g = int(green*maxHexValue)  ## rescale green
+  b = int(blue*maxHexValue)   ## rescale blue
+  RR = format(r,'02x') ## two-digit hex representation
+  GG = format(g,'02x') ## two-digit hex representation
+  BB = format(b,'02x') ## two-digit hex representation
+  return '#'+RR+GG+BB
+```
+
+Color the nodes according to some color scale you choose within the `add_node_style()` function.  You will need to scale the distances to be between 0 and 1, but you have both the Red, Green, and Blue channels to adjust.  In addition to scaling the path distance `d` to be between 0 and 1, you can also consider using `1-d` in one or more channels.
+
+:question: What about nodes with infinite distance? You may want to ignore nodes that are not connected (e.g. make them white).
+
+## Submitting
+
+:star2: **You're Done with Tasks A-C!**  No code handin is required. Instead, you will share your `lecture` network (and any saved layouts) with the `BIO331F20` Group.  
+
+- **Share the graph with the group.**  You can use the `share()` function provided in `lab2.py` or share the graph using the website interface (click "share" in the upper right).  
+- **If you saved any layouts, make sure they are also shared.**  Click the Layouts tab and select "share" for any layouts you want to share with the group.
+
+Even though you aren't submitting your code here, follow these suggestions:
+- Add comments to your code (this will be useful for posting subsequent graphs).
+- All your code (except import statements and a `main()` call at the bottom of the file) should be within functions.
+- Clean up your GraphSpace graphs by deleting the unused graphs.  On the page that displays all graphs, there is an option to remove each graph you have posted.
