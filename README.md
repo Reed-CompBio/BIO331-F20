@@ -9,6 +9,7 @@ In this lab, you will implement the shortest paths algorithm using a breadth-fir
 In Monday's lecture, we talked at a high level how we can compute the shortest paths from a node `s` to all other nodes in `s`'s connected component.  Briefly, we start at `s` and "explore" the nodes in layers:
 
 ![BFS](figs/BFS.png)
+
 _Image Credit: TM Murali, Virginia Tech_
 
 We need to explore the nodes in a particular way in order for this algorithm to compute the shortest paths.  We will store the nodes to explore using a [_queue_](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) data structure.
@@ -16,6 +17,7 @@ We need to explore the nodes in a particular way in order for this algorithm to 
 Queues are a First-In First-Out (FIFO) data structure; you add elements to the end of the queue ("enqueue") and you remove elements at the front of the queue ("dequeue"):
 
 ![queue](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/450px-Data_Queue.svg.png)
+
 _Wikipedia_
 
 Another way to think about a queue is as a line of people.  When you join the line, you join at the end; when someone leaves the line, the first get to go.
@@ -60,23 +62,25 @@ ShortestPaths(G,s):
 
 ## :star: Task B: Implement the Shortest Paths Algorithm
 
-Implement the shortest paths algorithm and post the graph to GraphSpace.  The lab_utils.py file contains a function to get two graphs, one from `lab` and one from `lecture`. It returns all the graph data structures we have learned about so far:
+Implement the shortest paths algorithm and post the graph to GraphSpace.  The `lab_utils.py` file contains a function to get two graphs, one from [`lab`](http://graphspace.org/graphs/29432?user_layout=13823) and one from [`lecture`](http://graphspace.org/graphs/29433) - click the links to view the un-annotated GraphSpace graphs.
+
+The function in `lab_utils.py` returns all the graph data structures we have learned about so far.  At the top of your code, add
 
 ```
-## put this line where you import modules
-import lab
-
-...
-
-# when you're ready to get the graph (e.g., in your main() function)...
-node_list, edge_list, adj_list, adj_mat = Lab_utils.get_graph('lab') ## or `lecture'
+import lab_utils
 ```
 
-Make your own Python file and get the graph from `lab` (which is smaller than the graph from `lecture`).  Write a `shortest_paths()` function that takes a graph (from the data structures you choose) and a source node `s` and returns a dictionary of distances of all nodes to `s`.
+and when you're ready to get a graph (e.g. in your `main()` function), type
+
+```
+node_list, edge_list, adj_list, adj_mat = lab_utils.get_graph('lab') ## or `lecture'
+```
+
+Create your own Python `run.py` file and write code to get the `lab` graph (which is a single connected component).  Then, write a `shortest_paths()` function that takes a graph (from the data structures you choose) and a source node (which can be `A` for both graphs) and returns a dictionary of distances of all nodes to `A`.  
 
 :question: How should you represent infinity?  You can either use `float('inf')` or use a very large integer (which needs to be larger than the number of edges in the graph).
 
-When you are done, post the graph and add the distances from `s` in each node's label to confirm that your code is working properly.  You can use any of your old code from Lab 2 or the previous programming assignment.
+When you are done, add code to post the graph to GraphSpace. Include the distances from `s` in each node's label to confirm that your code is working properly.  You can use any of your old code from Lab 2 or the previous programming assignment.
 
 ## :star: Task C: Color Nodes by Distance
 
