@@ -4,11 +4,11 @@ In this lab, you will implement most (if not all) the pieces to compute an appro
 
 ![original](figs/orig.jpg)
 
-## 1. Run `lab4.py`
+## Preliminaries: Run `lab4.py`
 
-The `lab_utils.py` file contains many helper functions for this lab.  First, add your email and password in the `lab4.py` file and run it.  This code automatically visualizes a GraphSpace graph by calling functions from `lab_utils.py`.  
+The `lab_utils.py` file contains many helper functions for this lab.  First, add your email and password in the `lab4.py` file and run it.  This code automatically visualizes a GraphSpace graph by calling functions from `lab_utils.py`. Feel free to change the color or style of the nodes or edges - modify the `viz_graph()` function in the `lab_utils.py` file.
 
-## 2. Compute the Shortest Paths in an Unweighted Graph
+## :star: **Task A:** Compute the Shortest Paths in an Unweighted Graph
 
 Begin by copying your `shortest_paths()` code over from Lab 3 or the Module 2 Programming Assignment. This function returns a dictionary `D` of the path lengths from a node `s` to all other nodes in the graph.  We need to be able to calculate the paths themselves.
 
@@ -24,9 +24,9 @@ Once your code returns a `pi` dictionary, the `lab_utils.py` code has a `get_pat
 
 Calculate the shortest paths from node `'a'` in the graph and store the predecessor dictionary as `pi`. For every node `n` in the graph, print `get_path('a',n,pi)` and confirm by eye that the paths are correct. Note: A path is arbitrarily chosen in the case of tied shortest paths.
 
-:star: This is part of **Task A** of the Programming Assignment - you can copy this code when you need it.
+:arrow_right: This is part of **Task A** of the Programming Assignment - you can copy this code when you need it.
 
-## 3. Compute the Metric Closure of the Graph
+## :star: **Task B:** Compute the Metric Closure of the Graph
 
 For the Steiner tree problem, we are given a graph _G_ and a set of terminals _L_ to connect.  The **metric closure** of _G_ on the nodes (terminals) _L_ is a weighted, undirected graph where the nodes are _L_ and the edges are all possible pairs of edges, and each edge is weighted by the cost of the shortest path between the two terminals in the original graph _G_.  The metric closure of the example graph is below, with edges and edge weights in black:
 
@@ -46,7 +46,7 @@ lab_utils.viz_graph(graphspace,terminals,closure_edges,terminals,[],'Metric Clos
 
 Note that `weighted=True` so the edges will be weighted according to the `closure_edges` 3-element lists.
 
-## 4. Compute the Minimum Spanning Tree of the Metric Closure
+## :star: **Task C:** Compute the Minimum Spanning Tree of the Metric Closure
 
 An example minimum spanning tree of the metric closure is highlighted in red above, though there are many spanning trees that have the same cost.  The `lab_utils.py` file has a function to compute the minimum spanning tree of a weighted graph _G_.  It takes two inputs:
 
@@ -62,7 +62,7 @@ lab_utils.viz_graph(graphspace,terminals,closure_edges,terminals,MST,'Min Spanni
 
 :question: What should you input for `nodes` and `weighted_edges` above? Think about which graph you want to compute the spanning tree of.
 
-## 5. Expand the Minimum Spanning Tree to get the Steiner Tree Approximation
+## :star: **Task D:** Expand the Minimum Spanning Tree to get the Steiner Tree Approximation
 
 ![steiner1](figs/steiner1.jpg)
 
@@ -93,3 +93,8 @@ lab_utils.viz_graph(graphspace,nodes,edges,terminals,final_edges,'Steiner Approx
 **Note:** There are many ties in the metric closure, and your choice of spanning tree and shortest path predecessor dictionary may result in different Steiner tree approximations.  The following examples is just as likely as the example above, though they have different overall weights:
 
 ![steiner2](figs/steiner2.jpg)
+
+
+## Submitting
+
+:star2: **You're Done with Tasks A-D!**  No code handin is required. Instead, you will share your final Steiner tree network (and any saved layouts) with the `BIO331F20` Group.  
