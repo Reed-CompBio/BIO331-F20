@@ -20,9 +20,9 @@ Modify the function to include a new  _predecessor_ dictionary `pi`. A node's pr
 
 The `pi` dictionary should be updated **every time** the distance dictionary is updated.
 
-Once your code returns a `pi` dictionary, the `lab_utils.py` code has a `get_path()` function, which returns the shortest path from two nodes using the predecessor dictionary. If the predecessor dictionary above is assigned to the variable `pi`, then: `utils.get_path('A','C',pi)` returns `['A','B','C']` in the two-edge graph (A-B,B-C).
+Once your code returns a `pi` dictionary, the `lab_utils.py` code has a `get_path()` function, which returns the shortest path from two nodes using the predecessor dictionary. If the predecessor dictionary above is assigned to the variable `pi`, then: `lab_utils.get_path('A','C',pi)` returns `['A','B','C']` in the two-edge graph (A-B,B-C).
 
-Calculate the shortest paths from node `'a'` in the graph and store the predecessor dictionary as `pi`. For every node `n` in the graph, print `get_path('a',n,pi)` and confirm by eye that the paths are correct. Note: A path is arbitrarily chosen in the case of tied shortest paths.
+Calculate the shortest paths from node `'a'` in the graph and store the predecessor dictionary as `pi`. For every node `n` in the graph, print `lab_utils.get_path('a',n,pi)` and confirm by eye that the paths are correct. Note: A path is arbitrarily chosen in the case of tied shortest paths.
 
 :arrow_right: This is part of **Task A** of the Programming Assignment - you can copy this code when you need it.
 
