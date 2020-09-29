@@ -94,7 +94,7 @@ def viz_graph(graphspace,nodes,edges,terminals,tree,title,weighted=False):
 	if weighted:
 		for u,v,w in edges:
 			G.add_edge(u,v,popup='weight %d' % (w))
-			if [u,v,w] in tree or [v,u,w] in tree:
+			if [u,v,w] in tree or [v,u,w] in tree or [u,v] in tree or [v,u] in tree:
 				G.add_edge_style(u,v,color=tree_edge_color,width=w)
 			else:
 				G.add_edge_style(u,v,color=nontree_edge_color,width=w)
